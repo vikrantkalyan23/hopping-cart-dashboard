@@ -24,12 +24,13 @@ app.get('/register', (req, res) => res.render('register'));
 app.get('/products', async (req, res) => {
     try {
         const products = await Product.find();
+        console.log(products); // Log to verify data
         res.render('products', { products });
     } catch (error) {
+        console.error('Error fetching products:', error.message); // Log error details
         res.status(500).send('Error fetching products');
     }
 });
-
 
 // API routes
 app.use('/api/auth', require('./routes/authRoutes'));
