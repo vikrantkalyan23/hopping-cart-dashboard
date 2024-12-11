@@ -12,3 +12,4 @@ npm install --save-dev nodemon
 
 nodemon server.js or node server.js
 
+npm install ejs
