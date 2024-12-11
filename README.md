@@ -9,3 +9,6 @@ npm install express mongoose dotenv jsonwebtoken bcryptjs body-parser cors
 
 npm install --save-dev nodemon
 
+
+nodemon server.js or node server.js
+
